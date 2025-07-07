@@ -59,7 +59,7 @@ def generate_stats_card():
 
     # 生成卡片样式的 Markdown
     card = f"""<!-- STATS_CARD_START -->
-<div style="display: flex; justify-content: center; gap: 20px;">
+<div style="display: flex; justify-content: center; gap: 20px; flex-wrap: nowrap;">
   <!-- Chinese Table -->
   <table style="border-collapse: collapse; width: 40%; background: #f4f4f4; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); text-align: center;">
     <tr>
