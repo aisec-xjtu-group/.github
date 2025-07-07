@@ -51,22 +51,7 @@ If members are willing to participate in open source, please contact the reposit
 
 ### 💬 联系我们
 
-课题组负责人联系方式：
-
 | 联系人 | 联系方式 |
 | :---: | :---: |
-| [沈超 教授]([https://eff.org](https://gr.xjtu.edu.cn/web/cshen/) | chaoshen@xjtu.edu.cn |
-| [蔺琛皓 教授]([https://eff.org](https://gr.xjtu.edu.cn/web/linchenhao) | linchenhao@xjtu.edu.cn |
-
-<div style="display: flex; justify-content: center;">
-  <table style="border-collapse: collapse; width: 80%; background: #f4f4f4; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); text-align: center;">
-    <tr>
-      <td style="padding: 10px; font-weight: bold; text-align: center;">[沈超 教授]([https://eff.org](https://gr.xjtu.edu.cn/web/cshen/)</td>
-      <td style="padding: 10px; text-align: center;">chaoshen@xjtu.edu.cn</td>
-    </tr>
-    <tr>
-      <td style="padding: 10px; font-weight: bold; text-align: center;">[蔺琛皓 教授]([https://eff.org](https://gr.xjtu.edu.cn/web/cshen/)</td>
-      <td style="padding: 10px; text-align: center;">linchenhao@xjtu.edu.cn</td>
-    </tr>
-  </table>
-</div>
+| [沈超 教授](https://gr.xjtu.edu.cn/web/cshen/) | chaoshen@xjtu.edu.cn |
+| [蔺琛皓 教授](https://gr.xjtu.edu.cn/web/linchenhao) | linchenhao@xjtu.edu.cn |
