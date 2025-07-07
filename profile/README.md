@@ -41,7 +41,7 @@ The AISEC Research Group at Xi'an Jiaotong University Open Source Repository
 
 组织成员如有参与开源意愿，请与仓库管理员联系 📬：yh.wang@stu.xjtu.edu.cn
 
-If organization members are willing to participate in open source, please contact the repository administrator 📬: yh.wang@stu.xjtu.edu.cn
+If members are willing to participate in open source, please contact the repository administrator 📬: yh.wang@stu.xjtu.edu.cn
 
 ### 💬 联系我们
 
