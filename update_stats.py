@@ -83,7 +83,6 @@ def generate_stats_card():
       </td>
     </tr>
   </table>
-
   <!-- English Table -->
   <table style="border-collapse: collapse; width: 45%; background: #f4f4f4; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); text-align: center; min-width: 300px;">
     <tr>
