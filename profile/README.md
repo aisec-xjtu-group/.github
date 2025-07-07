@@ -4,6 +4,9 @@ The AISEC Research Group at Xi'an Jiaotong University Open Source Repository
 
 ### 🙋‍♀ XJTU-AISEC 简介
 
+我们是来自西安交通大学的 AISEC 研究团队，专注于人工智能安全的多个领域，包括：对抗性机器学习、多模态生成与检测、大模型安全、人工智能测试、可信人工智能、智能身份安全等。欢迎关注我们的开源代码仓库。
+
+We are AISEC research team from Xi'an Jiaotong University, focusing on various aspects of AI Security: Adversarial Machine Learning, Multimedia Generation and Detection, Large Model Security, AI Testing, Trustworthy AI, Intelligent Identity Security, etc. Welcome to follow our open-source code repositories.
 
 ### 📊 组织仓库统计
 
