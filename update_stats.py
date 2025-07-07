@@ -59,46 +59,22 @@ def generate_stats_card():
 
     # 生成卡片样式的 Markdown
     card = f"""<!-- STATS_CARD_START -->
-<div style="display: flex; flex-direction: row; justify-content: center; align-items: flex-start; gap: 20px; flex-wrap: nowrap; width: 100%; max-width: 1000px; margin: 0 auto;">
-  <!-- Chinese Table -->
-  <table style="border-collapse: collapse; width: 45%; background: #f4f4f4; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); text-align: center; min-width: 300px;">
+<div style="display: flex; justify-content: center;">
+  <table style="border-collapse: collapse; width: 80%; background: #f4f4f4; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); text-align: center;">
     <tr>
-      <td style="padding: 10px; font-weight: bold; text-align: center;">总仓库数 📚</td>
+      <td style="padding: 10px; font-weight: bold; text-align: center;">总仓库数 / Total Repositories 📚</td>
       <td style="padding: 10px; text-align: center;">{total_repos}</td>
     </tr>
     <tr>
-      <td style="padding: 10px; font-weight: bold; text-align: center;">总星标数 ⭐</td>
+      <td style="padding: 10px; font-weight: bold; text-align: center;">总星标数 / Total Stars ⭐</td>
       <td style="padding: 10px; text-align: center;">{total_stars}</td>
     </tr>
     <tr>
-      <td style="padding: 10px; font-weight: bold; text-align: center;">总复制数 🍴</td>
+      <td style="padding: 10px; font-weight: bold; text-align: center;">总复制数 / Total Forks 🍴</td>
       <td style="padding: 10px; text-align: center;">{total_forks}</td>
     </tr>
     <tr>
-      <td style="padding: 10px; font-weight: bold; text-align: center;">主要语言 🪧</td>
-      <td style="padding: 10px; text-align: center;">
-        <ul style="list-style: none; padding: 0; margin: 0;">
-          {"".join(f"<li>{lang}: {bytes:,} bytes</li>" for lang, bytes in top_languages)}
-        </ul>
-      </td>
-    </tr>
-  </table>
-  <!-- English Table -->
-  <table style="border-collapse: collapse; width: 45%; background: #f4f4f4; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); text-align: center; min-width: 300px;">
-    <tr>
-      <td style="padding: 10px; font-weight: bold; text-align: center;">Total Repositories 📚</td>
-      <td style="padding: 10px; text-align: center;">{total_repos}</td>
-    </tr>
-    <tr>
-      <td style="padding: 10px; font-weight: bold; text-align: center;">Total Stars ⭐</td>
-      <td style="padding: 10px; text-align: center;">{total_stars}</td>
-    </tr>
-    <tr>
-      <td style="padding: 10px; font-weight: bold; text-align: center;">Total Forks 🍴</td>
-      <td style="padding: 10px; text-align: center;">{total_forks}</td>
-    </tr>
-    <tr>
-      <td style="padding: 10px; font-weight: bold; text-align: center;">Primary Languages 🪧</td>
+      <td style="padding: 10px; font-weight: bold; text-align: center;">主要语言 / Primary Languages 🪧</td>
       <td style="padding: 10px; text-align: center;">
         <ul style="list-style: none; padding: 0; margin: 0;">
           {"".join(f"<li>{lang}: {bytes:,} bytes</li>" for lang, bytes in top_languages)}
