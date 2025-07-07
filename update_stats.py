@@ -59,16 +59,28 @@ def generate_stats_card():
 
     # 生成卡片样式的 Markdown
     card = f"""<!-- STATS_CARD_START -->
-<div style="background: #f4f4f4; padding: 20px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-  <h3>📊 组织统计</h3>
-  <p><strong>总仓库数</strong>: {total_repos} 📚</p>
-  <p><strong>总星标数</strong>: {total_stars} ⭐</p>
-  <p><strong>总复制数</strong>: {total_forks} 🍴</p>
-  <p><strong>主要语言</strong>:</p>
-  <ul>
-    {"".join(f"<li>{lang}: {bytes:,} bytes</li>" for lang, bytes in top_languages)}
+<div style="background: linear-gradient(135deg, #ffffff 0%, #e0e7ff 100%); padding: 24px; border-radius: 12px; box-shadow: 0 6px 12px rgba(0,0,0,0.15); margin: 16px 0; transition: transform 0.3s ease; max-width: 500px;">
+  <h3 style="font-size: 24px; color: #1e3a8a; margin-bottom: 16px;">📊 组织统计</h3>
+  <div style="display: flex; align-items: center; margin-bottom: 12px;">
+    <span style="font-size: 20px; margin-right: 8px;">📚</span>
+    <p style="margin: 0;"><strong>总仓库数</strong>: {total_repos}</p>
+  </div>
+  <div style="display: flex; align-items: center; margin-bottom: 12px;">
+    <span style="font-size: 20px; margin-right: 8px;">⭐</span>
+    <p style="margin: 0;"><strong>总星标数</strong>: {total_stars}</p>
+  </div>
+  <div style="display: flex; align-items: center; margin-bottom: 12px;">
+    <span style="font-size: 20px; margin-right: 8px;">🍴</span>
+    <p style="margin: 0;"><strong>总复制数</strong>: {total_forks}</p>
+  </div>
+  <p style="font-weight: bold; color: #1e3a8a; margin-bottom: 8px;">主要语言:</p>
+  <ul style="list-style: none; padding: 0; margin: 0;">
+    {"".join(f'<li style="margin-bottom: 6px;">🔹 {lang}: {bytes:,} bytes</li>' for lang, bytes in top_languages)}
   </ul>
 </div>
+<style>
+  div:hover {{ transform: translateY(-4px); }}
+</style>
 <!-- STATS_CARD_END -->"""
     return card
 
