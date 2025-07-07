@@ -61,24 +61,24 @@ def generate_stats_card():
     card = f"""<!-- STATS_CARD_START -->
 <div style="display: flex; justify-content: center;">
   <table style="border-collapse: collapse; width: 80%; background: #f4f4f4; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); text-align: center;">
+    # <tr>
+    #   <th colspan="2" style="padding: 10px; font-size: 1.2em;">📊 组织统计</th>
+    # </tr>
     <tr>
-      <th colspan="2" style="padding: 10px; font-size: 1.2em;">📊 组织统计</th>
+      <td style="padding: 10px; font-weight: bold; text-align: center;">总仓库数 📚</td>
+      <td style="padding: 10px; text-align: center;">{total_repos}</td>
     </tr>
     <tr>
-      <td style="padding: 10px; font-weight: bold;">总仓库数 📚</td>
-      <td style="padding: 10px;">{total_repos}</td>
+      <td style="padding: 10px; font-weight: bold; text-align: center;">总星标数 ⭐</td>
+      <td style="padding: 10px; text-align: center;">{total_stars}</td>
     </tr>
     <tr>
-      <td style="padding: 10px; font-weight: bold;">总星标数 ⭐</td>
-      <td style="padding: 10px;">{total_stars}</td>
+      <td style="padding: 10px; font-weight: bold; text-align: center;">总复制数 🍴</td>
+      <td style="padding: 10px; text-align: center;">{total_forks}</td>
     </tr>
     <tr>
-      <td style="padding: 10px; font-weight: bold;">总复制数 🍴</td>
-      <td style="padding: 10px;">{total_forks}</td>
-    </tr>
-    <tr>
-      <td style="padding: 10px; font-weight: bold;">主要语言</td>
-      <td style="padding: 10px;">
+      <td style="padding: 10px; font-weight: bold; text-align: center;">主要语言 🪧</td>
+      <td style="padding: 10px; text-align: center;">
         <ul style="list-style: none; padding: 0; margin: 0;">
           {"".join(f"<li>{lang}: {bytes:,} bytes</li>" for lang, bytes in top_languages)}
         </ul>
