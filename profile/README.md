@@ -1,8 +1,7 @@
-## Hi there 👋
-# 欢迎来到 XJTU-AISEC 开源仓库
+## 欢迎来到 XJTU-AISEC 开源仓库👋
 The AISEC Research Group at Xi'an Jiaotong University Open Source Repository
 
-
+### 课题组简介🙋‍♀️
 
 **Here are some ideas to get you started:**
 
