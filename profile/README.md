@@ -24,9 +24,6 @@ The AISEC Research Group at Xi'an Jiaotong University Open Source Repository
 ### 🌈 贡献参与指南
 
 
-### 🍿 组内趣事
-
-
 ### 💬 联系我们
 
 
