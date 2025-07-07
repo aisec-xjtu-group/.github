@@ -1,0 +1,25 @@
+name: Update Organization Stats
+on:
+  schedule:
+    - cron: '0 0 * * *'  # 每天午夜运行
+  workflow_dispatch:  # 支持手动触发
+jobs:
+  update-stats:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+      - name: Install dependencies
+        run: pip install requests
+      - name: Run update script
+        env:
+          GITHUB_TOKEN: ${{ secrets.REFRESH_TOKEN }}
+        run: python update_stats.py
+      - name: Commit changes
+        uses: EndBug/add-and-commit@v9
+        with:
+          add: 'profile/README.md'
+          message: 'Update organization stats'
