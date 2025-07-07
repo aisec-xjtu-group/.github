@@ -5,7 +5,7 @@ from collections import Counter
 
 # 配置
 ORG_NAME = "aisec-xjtu-group"  # 替换为实际组织名称，例如 "xai-org"
-TOKEN = os.getenv("REFRESHB_TOKEN")  # 从环境变量读取 PAT
+TOKEN = os.getenv("REFRESH_TOKEN")  # 从环境变量读取 PAT
 README_PATH = "profile/README.md"
 HEADERS = {
     "Authorization": f"Bearer {TOKEN}",
