@@ -16,7 +16,7 @@ jobs:
         run: pip install requests
       - name: Run update script
         env:
-          GITHUB_TOKEN: ${{ secrets.REFRESH_TOKEN }}
+          REFRESH_TOKEN: ${{ secrets.REFRESH_TOKEN }}
         run: python update_stats.py
       - name: Commit changes
         uses: EndBug/add-and-commit@v9
