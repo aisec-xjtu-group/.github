@@ -59,14 +59,32 @@ def generate_stats_card():
 
     # 生成卡片样式的 Markdown
     card = f"""<!-- STATS_CARD_START -->
-<div style="background: #f4f4f4; padding: 20px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-  <p><strong>总仓库数</strong>: {total_repos} 📚
-  <strong>总星标数</strong>: {total_stars} ⭐
-  <strong>总复制数</strong>: {total_forks} 🍴</p>
-  <p><strong>主要语言</strong>:</p>
-  <ul>
-    {"".join(f"<li>{lang}: {bytes:,} bytes</li>" for lang, bytes in top_languages)}
-  </ul>
+<div style="display: flex; justify-content: center;">
+  <table style="border-collapse: collapse; width: 80%; background: #f4f4f4; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); text-align: center;">
+    <tr>
+      <th colspan="2" style="padding: 10px; font-size: 1.2em;">📊 组织统计</th>
+    </tr>
+    <tr>
+      <td style="padding: 10px; font-weight: bold;">总仓库数 📚</td>
+      <td style="padding: 10px;">{total_repos}</td>
+    </tr>
+    <tr>
+      <td style="padding: 10px; font-weight: bold;">总星标数 ⭐</td>
+      <td style="padding: 10px;">{total_stars}</td>
+    </tr>
+    <tr>
+      <td style="padding: 10px; font-weight: bold;">总复制数 🍴</td>
+      <td style="padding: 10px;">{total_forks}</td>
+    </tr>
+    <tr>
+      <td style="padding: 10px; font-weight: bold;">主要语言</td>
+      <td style="padding: 10px;">
+        <ul style="list-style: none; padding: 0; margin: 0;">
+          {"".join(f"<li>{lang}: {bytes:,} bytes</li>" for lang, bytes in top_languages)}
+        </ul>
+      </td>
+    </tr>
+  </table>
 </div>
 <!-- STATS_CARD_END -->"""
     return card
