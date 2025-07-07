@@ -40,7 +40,7 @@ We are AISEC research team from Xi'an Jiaotong University, focusing on various a
 ### 👩‍💻 当前开源资源
 
 | 项目 | 研究方向 | 任务描述 | 论文 |
-| --- | --- | --- | --- |
+| :---: | :---: | --- | --- |
 | git status | List all new or modified files | none | none |
 
 ### 🌈 贡献参与指南
@@ -51,7 +51,7 @@ If members are willing to participate in open source, please contact the reposit
 
 ### 💬 联系我们
 
-| 联系人 | 联系方式 |
+| 联系人 / Contact | 联系方式 / Email |
 | :---: | :---: |
 | [沈超 教授](https://gr.xjtu.edu.cn/web/cshen/) | chaoshen@xjtu.edu.cn |
 | [蔺琛皓 教授](https://gr.xjtu.edu.cn/web/linchenhao) | linchenhao@xjtu.edu.cn |
