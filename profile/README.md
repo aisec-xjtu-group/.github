@@ -8,7 +8,7 @@ The AISEC Research Group at Xi'an Jiaotong University Open Source Repository
 ### 📊 组织仓库统计
 
 <!-- STATS_CARD_START -->
-<div style="display: flex; justify-content: center; gap: 20px;">
+<div style="display: flex; justify-content: center; gap: 20px; flex-wrap: nowrap;">
   <!-- Chinese Table -->
   <table style="border-collapse: collapse; width: 40%; background: #f4f4f4; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); text-align: center;">
     <tr>
@@ -27,7 +27,7 @@ The AISEC Research Group at Xi'an Jiaotong University Open Source Repository
       <td style="padding: 10px; font-weight: bold; text-align: center;">主要语言 🪧</td>
       <td style="padding: 10px; text-align: center;">
         <ul style="list-style: none; padding: 0; margin: 0;">
-          <li>Python: 152,356 bytes</li><li>Shell: 461 bytes</li>
+          <li>Python: 152,375 bytes</li><li>Shell: 461 bytes</li>
         </ul>
       </td>
     </tr>
@@ -51,7 +51,7 @@ The AISEC Research Group at Xi'an Jiaotong University Open Source Repository
       <td style="padding: 10px; font-weight: bold; text-align: center;">Primary Languages 🪧</td>
       <td style="padding: 10px; text-align: center;">
         <ul style="list-style: none; padding: 0; margin: 0;">
-          <li>Python: 152,356 bytes</li><li>Shell: 461 bytes</li>
+          <li>Python: 152,375 bytes</li><li>Shell: 461 bytes</li>
         </ul>
       </td>
     </tr>
