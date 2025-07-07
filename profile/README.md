@@ -36,10 +36,9 @@ The AISEC Research Group at Xi'an Jiaotong University Open Source Repository
 
 ### 👩‍💻 当前开源资源
 
-| Command | Description |
-| --- | --- |
-| git status | List all new or modified files |
-| git diff | Show file differences that haven't been staged |
+| 项目 | 研究方向 | 任务描述 | 论文 |
+| --- | --- | --- | --- |
+| git status | List all new or modified files | none | none |
 
 ### 🌈 贡献参与指南
 
