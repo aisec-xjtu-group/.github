@@ -37,7 +37,7 @@ We are AISEC research team from Xi'an Jiaotong University, focusing on various a
 
 ### 👩‍💻 Current Open Source Resources
 
-| 项目 | 研究方向 | 任务描述 | 论文 |
+| Project | Research Direction | Detail | Paper |
 | :---: | :---: | --- | --- |
 | git status | List all new or modified files | none | none |
 
