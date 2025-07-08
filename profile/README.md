@@ -19,7 +19,7 @@ We are AISEC research team from Xi'an Jiaotong University, focusing on various a
     </tr>
     <tr>
       <td style="padding: 10px; font-weight: bold; text-align: center;">总星标数 / Total Stars ⭐</td>
-      <td style="padding: 10px; text-align: center;">11</td>
+      <td style="padding: 10px; text-align: center;">12</td>
     </tr>
     <tr>
       <td style="padding: 10px; font-weight: bold; text-align: center;">总复制数 / Total Forks 🍴</td>
