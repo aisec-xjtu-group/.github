@@ -35,7 +35,7 @@
 
 ### 👩‍💻 当前开源资源
 
-| 项目 | 研究方向 | 任务描述 | 论文 | 仓库链接 |
+| 项目 | 方向 | 任务 | 论文 | 链接 |
 | :---: | :---: | --- | --- | --- |
 | git status | List all new or modified files | none | none | none |
 
