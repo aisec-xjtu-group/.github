@@ -45,7 +45,7 @@
 
 ### 💬 联系我们
 
-| 联系人 / Contact | 联系方式 / Email |
+| 联系人 | 联系方式 |
 | :---: | :---: |
 | [沈超 教授](https://gr.xjtu.edu.cn/web/cshen/) | chaoshen@xjtu.edu.cn |
 | [蔺琛皓 教授](https://gr.xjtu.edu.cn/web/linchenhao) | linchenhao@xjtu.edu.cn |
