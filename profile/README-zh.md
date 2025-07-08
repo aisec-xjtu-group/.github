@@ -49,3 +49,5 @@
 | :---: | :---: |
 | [沈超 教授](https://gr.xjtu.edu.cn/web/cshen/) | chaoshen@xjtu.edu.cn |
 | [蔺琛皓 教授](https://gr.xjtu.edu.cn/web/linchenhao) | linchenhao@xjtu.edu.cn |
+| [赵正宇 教授](https://zhengyuzhao.github.io/) | zhengyu.zhao@xjtu.edu.cn |
+| [杨乐 教授](https://www.yangle.cc/) | yangle15@xjtu.edu.cn |
