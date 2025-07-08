@@ -1,10 +1,8 @@
-## 👋 Welcome to the XJTU-AISEC open source repository
-
-The AISEC Research Group at Xi'an Jiaotong University Open Source Repository
+## 👋 Welcome to the XJTU-AISEC open-source repository
 
 ### 🙋‍♀ XJTU-AISEC Introduction
 
-We are AISEC research team from Xi'an Jiaotong University, focusing on various aspects of AI Security: Adversarial Machine Learning, Multimedia Generation and Detection, Large Model Security, AI Testing, Trustworthy AI, Intelligent Identity Security, etc. Welcome to follow our open-source code repositories.
+We are the Artificial Intelligence Security (AISEC) Research Group at Xi'an Jiaotong University, focusing on various aspects of AI security, including Adversarial Machine Learning, Multimedia Generation and Detection, Large Model Security, AI Testing, Trustworthy AI, and Intelligent Identity Security.
 
 ### 📊 Organize Repositories Statistics
 
