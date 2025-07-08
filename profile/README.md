@@ -25,7 +25,7 @@ We are the Artificial Intelligence Security (AISEC) Research Group at Xi'an Jiao
       <td style="padding: 10px; font-weight: bold; text-align: center;">Primary Languages 🪧</td>
       <td style="padding: 10px; text-align: center;">
         <ul style="list-style: none; padding: 0; margin: 0;">
-          <li>Python: 151,228 bytes</li><li>Shell: 461 bytes</li>
+          <li>Python: 153,753 bytes</li><li>Shell: 461 bytes</li>
         </ul>
       </td>
     </tr>
