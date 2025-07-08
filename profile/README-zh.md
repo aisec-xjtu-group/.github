@@ -1,6 +1,6 @@
 ## 👋 欢迎来到 XJTU-AISEC 开源仓库
 
-[![Static Badge](https://img.shields.io/badge/EN-英文-blue)](https://github.com/aisec-xjtu-group/.github/blob/main/profile/README.md)
+[![Static Badge](https://img.shields.io/badge/EN-English-blue)](https://github.com/aisec-xjtu-group/.github/blob/main/profile/README.md)
 
 我们是来自西安交通大学的 AISEC 研究团队，专注于人工智能安全的多个领域，包括：对抗性机器学习、多模态生成与检测、大模型安全、人工智能测试、可信人工智能、智能身份安全等。
 
