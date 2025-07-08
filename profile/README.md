@@ -35,7 +35,7 @@ We are the Artificial Intelligence Security (AISEC) Research Group at Xi'an Jiao
 
 ### 👩‍💻 Repositories
 
-| Project | Research Direction | Detail | Paper |Repository Link |
+| Project | Direction | Detail | Paper | Repository Link |
 | :---: | :---: | --- | --- |--- |
 | git status | List all new or modified files | none | none |none |
 
