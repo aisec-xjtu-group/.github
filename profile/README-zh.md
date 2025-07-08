@@ -1,14 +1,8 @@
 ## 👋 欢迎来到 XJTU-AISEC 开源仓库
 
-The AISEC Research Group at Xi'an Jiaotong University Open Source Repository
+我们是来自西安交通大学的 AISEC 研究团队，专注于人工智能安全的多个领域，包括：对抗性机器学习、多模态生成与检测、大模型安全、人工智能测试、可信人工智能、智能身份安全等。
 
-### 🙋‍♀ XJTU-AISEC 简介 / Introduction
-
-我们是来自西安交通大学的 AISEC 研究团队，专注于人工智能安全的多个领域，包括：对抗性机器学习、多模态生成与检测、大模型安全、人工智能测试、可信人工智能、智能身份安全等。欢迎关注我们的开源代码仓库。
-
-We are AISEC research team from Xi'an Jiaotong University, focusing on various aspects of AI Security: Adversarial Machine Learning, Multimedia Generation and Detection, Large Model Security, AI Testing, Trustworthy AI, Intelligent Identity Security, etc. Welcome to follow our open-source code repositories.
-
-### 📊 组织仓库统计 / Organize Repositories Statistics
+### 📊 组织仓库统计
 
 <!-- STATS_CARD_START -->
 <div style="display: flex; justify-content: center;">
@@ -37,19 +31,17 @@ We are AISEC research team from Xi'an Jiaotong University, focusing on various a
 </div>
 <!-- STATS_CARD_END -->
 
-### 👩‍💻 当前开源资源 / Current Open Source Resources
+### 👩‍💻 当前开源资源
 
-| 项目 | 研究方向 | 任务描述 | 论文 |
-| :---: | :---: | --- | --- |
-| git status | List all new or modified files | none | none |
+| 项目 | 研究方向 | 任务描述 | 论文 | 仓库链接 |
+| :---: | :---: | --- | --- | --- |
+| git status | List all new or modified files | none | none | none |
 
-### 🌈 贡献参与指南 / Contribution and Participation Guide
+### 🌈 贡献参与指南
 
 组织成员如有参与开源意愿，请与仓库管理员联系 📬：yh.wang@stu.xjtu.edu.cn
 
-If members are willing to participate in open source, please contact the repository administrator 📬: yh.wang@stu.xjtu.edu.cn
-
-### 💬 联系我们 / Contact Us
+### 💬 联系我们
 
 | 联系人 / Contact | 联系方式 / Email |
 | :---: | :---: |
