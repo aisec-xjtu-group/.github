@@ -21,5 +21,7 @@ jobs:
       - name: Commit changes
         uses: EndBug/add-and-commit@v9
         with:
-          add: 'profile/README.md'
-          message: 'Update organization stats'
+          add: |
+            profile/README.md
+            profile/README-zh.md
+          message: 'Update organization stats (EN & ZH)'
