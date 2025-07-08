@@ -45,7 +45,7 @@ If members are willing to participate in open source, please contact the reposit
 
 ### 💬 Contact Us
 
-| Contact | Email |
+| Contact 👤 | Email 📧 |
 | :---: | :---: |
 | [Prof. Chao Shen](https://gr.xjtu.edu.cn/web/cshen/) | chaoshen@xjtu.edu.cn |
 | [Prof. Chenhao Lin](https://gr.xjtu.edu.cn/web/linchenhao) | linchenhao@xjtu.edu.cn |
