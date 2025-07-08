@@ -2,7 +2,7 @@
 
 We are the Artificial Intelligence Security (AISEC) Research Group at Xi'an Jiaotong University, focusing on various aspects of AI security, including Adversarial Machine Learning, Multimedia Generation and Detection, Large Model Security, AI Testing, Trustworthy AI, and Intelligent Identity Security.
 
-### 📊 Organize Repositories Statistics
+### 📊 Repository Statistics
 
 <!-- STATS_CARD_START -->
 <div style="display: flex; justify-content: center;">
@@ -31,11 +31,11 @@ We are the Artificial Intelligence Security (AISEC) Research Group at Xi'an Jiao
 </div>
 <!-- STATS_CARD_END -->
 
-### 👩‍💻 Current Open Source Resources
+### 👩‍💻 Repositories
 
-| Project | Research Direction | Detail | Paper |
+| Project | Research Direction | Detail | Paper |Repository Link |
 | :---: | :---: | --- | --- |
-| git status | List all new or modified files | none | none |
+| git status | List all new or modified files | none | none |none |
 
 ### 🌈 Contribution and Participation Guide
 
