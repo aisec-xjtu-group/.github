@@ -45,5 +45,5 @@ If members are willing to participate in open source, please contact the reposit
 
 | Contact | Email |
 | :---: | :---: |
-| [沈超 教授](https://gr.xjtu.edu.cn/web/cshen/) | chaoshen@xjtu.edu.cn |
-| [蔺琛皓 教授](https://gr.xjtu.edu.cn/web/linchenhao) | linchenhao@xjtu.edu.cn |
+| [Prof. Chao Shen](https://gr.xjtu.edu.cn/web/cshen/) | chaoshen@xjtu.edu.cn |
+| [Prof. Chenhao Lin](https://gr.xjtu.edu.cn/web/linchenhao) | linchenhao@xjtu.edu.cn |
