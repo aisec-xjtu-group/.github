@@ -75,7 +75,7 @@ def generate_stats_card_en():
       <td style="padding: 10px; text-align: center;">{total_forks}</td>
     </tr>
     <tr>
-      <td style="padding: 10px; font-weight: bold; text-align: center;">Primary Languages 🪧</td>
+      <td style="padding: 10px; font-weight: bold; text-align: center;">Primary Languages 🖨</td>
       <td style="padding: 10px; text-align: center;">
         <ul style="list-style: none; padding: 0; margin: 0;">
           {"".join(f"<li>{lang}: {bytes:,} bytes</li>" for lang, bytes in top_languages)}
