@@ -11,7 +11,7 @@
   <table style="border-collapse: collapse; width: 80%; background: #f4f4f4; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); text-align: center;">
     <tr>
       <td style="padding: 10px; font-weight: bold; text-align: center;">总仓库数 📚</td>
-      <td style="padding: 10px; text-align: center;">5</td>
+      <td style="padding: 10px; text-align: center;">7</td>
     </tr>
     <tr>
       <td style="padding: 10px; font-weight: bold; text-align: center;">总星标数 ⭐</td>
@@ -22,10 +22,10 @@
       <td style="padding: 10px; text-align: center;">0</td>
     </tr>
     <tr>
-      <td style="padding: 10px; font-weight: bold; text-align: center;">主要语言 🪧</td>
+      <td style="padding: 10px; font-weight: bold; text-align: center;">主要语言 🖨</td>
       <td style="padding: 10px; text-align: center;">
         <ul style="list-style: none; padding: 0; margin: 0;">
-          <li>Python: 794,169 bytes</li><li>Makefile: 1,371 bytes</li><li>Shell: 461 bytes</li>
+          <li>Python: 961,886 bytes</li><li>Makefile: 1,371 bytes</li><li>Shell: 461 bytes</li>
         </ul>
       </td>
     </tr>
