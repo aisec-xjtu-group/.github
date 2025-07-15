@@ -35,9 +35,13 @@ We are the Artificial Intelligence Security (AISEC) Research Group at Xi'an Jiao
 
 ### 👩‍💻 Repositories
 
-| Project | Direction | Detail | Paper | Link |
-| :---: | :---: | --- | --- |--- |
-| git status | List all new or modified files | none | none |none |
+| Paper Title                                                  | Direction                           | Repository Name                                              |
+| ------------------------------------------------------------ | ----------------------------------- | ------------------------------------------------------------ |
+| [Collapse-Aware Triplet  Decoupling for Adversarially Robust Image Retrieval (ICML 2024)](https://arxiv.org/abs/2312.07364) | Adversarial Machine Learning        | [CA-TRIDE](https://github.com/aisec-xjtu-group/CA-TRIDE)     |
+| [Improving Integrated  Gradient-based Transferable Adversarial Examples by Refining the Integration Path (AAAI 2025)](https://ojs.aaai.org/index.php/AAAI/article/view/32722) | Adversarial Machine Learning        | [MuMoDIG](https://github.com/aisec-xjtu-group/MuMoDIG)       |
+| [Improving Adversarial  Transferability on Vision Transformers via Forward Propagation Refinement (CVPR 2025)](https://openaccess.thecvf.com/content/CVPR2025/html/Ren_Improving_Adversarial_Transferability_on_Vision_Transformers_via_Forward_Propagation_Refinement_CVPR_2025_paper.html) | Adversarial Machine Learning        | [FPR](https://github.com/aisec-xjtu-group/FPR)               |
+| [Revisiting Training-Inference  Trigger Intensity in Backdoor Attacks (USENIX Security 2025)](https://www.usenix.org/conference/usenixsecurity25/presentation/lin-chenhao) | Adversarial Machine Learning        | [TITIM](https://github.com/aisec-xjtu-group/TITIM)           |
+| [Breaking Semantic Artifacts for  Generalized AI-generated Image Detection (NeurIPS 2024)](https://proceedings.neurips.cc/paper_files/paper/2024/hash/6dddcff5b115b40c998a08fbd1cea4d7-Abstract-Conference.html) | Multimedia Generation and Detection | [FakeImageDetection](https://github.com/aisec-xjtu-group/FakeImageDetection) |
 
 ### 🌈 Contribution and Participation Guide
 
