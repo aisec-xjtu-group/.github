@@ -13,23 +13,47 @@ HEADERS = {
     "Accept": "application/vnd.github+json"
 }
 
+# def get_repos():
+#     """获取组织的所有仓库（包括私有仓库）"""
+#     repos = []
+#     page = 1
+#     while True:
+#         url = f"https://api.github.com/orgs/{ORG_NAME}/repos?type=all&page={page}&per_page=100"
+#         try:
+#             response = requests.get(url, headers=HEADERS)
+#             response.raise_for_status()
+#             data = response.json()
+#             if not data:
+#                 break
+#             repos.extend(data)
+#             page += 1
+#         except requests.exceptions.RequestException as e:
+#             print(f"Error fetching repos: {e}")
+#             exit(1)
+#     return repos
+
 def get_repos():
-    """获取组织的所有仓库（包括私有仓库）"""
+    """从文本文件读取仓库URL以获取所有仓库"""
     repos = []
-    page = 1
-    while True:
-        url = f"https://api.github.com/orgs/{ORG_NAME}/repos?type=all&page={page}&per_page=100"
-        try:
-            response = requests.get(url, headers=HEADERS)
-            response.raise_for_status()
-            data = response.json()
-            if not data:
-                break
-            repos.extend(data)
-            page += 1
-        except requests.exceptions.RequestException as e:
-            print(f"Error fetching repos: {e}")
-            exit(1)
+    try:
+        with open("repos.txt", "r", encoding="utf-8") as f:
+            repo_urls = [line.strip() for line in f if line.strip()]
+        
+        for url in repo_urls:
+            # 提取仓库名称和组织名称
+            repo_path = url.replace("https://github.com/", "").strip('/')
+            try:
+                repo_name = repo_path.split('/')[-1]
+                api_url = f"https://api.github.com/repos/{repo_path}"
+                response = requests.get(api_url, headers=HEADERS)
+                response.raise_for_status()
+                repos.append(response.json())
+            except requests.exceptions.RequestException as e:
+                print(f"Error fetching repo {repo_path}: {e}")
+                continue
+    except FileNotFoundError:
+        print("Error: repos.txt not found")
+        exit(1)
     return repos
 
 def get_languages(repo_name):
