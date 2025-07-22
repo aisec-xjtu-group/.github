@@ -42,6 +42,8 @@ We are the Artificial Intelligence Security (AISEC) Research Group at Xi'an Jiao
 | [Improving Adversarial  Transferability on Vision Transformers via Forward Propagation Refinement (CVPR 2025)](https://openaccess.thecvf.com/content/CVPR2025/html/Ren_Improving_Adversarial_Transferability_on_Vision_Transformers_via_Forward_Propagation_Refinement_CVPR_2025_paper.html) | Adversarial Machine Learning        | [FPR](https://github.com/RYC-98/FPR)               |
 | [Revisiting Training-Inference  Trigger Intensity in Backdoor Attacks (USENIX Security 2025)](https://www.usenix.org/conference/usenixsecurity25/presentation/lin-chenhao) | Adversarial Machine Learning        | [TITIM](https://github.com/cv12ha0/TITIM)           |
 | [Breaking Semantic Artifacts for  Generalized AI-generated Image Detection (NeurIPS 2024)](https://proceedings.neurips.cc/paper_files/paper/2024/hash/6dddcff5b115b40c998a08fbd1cea4d7-Abstract-Conference.html) | Multimedia Generation and Detection | [FakeImageDetection](https://github.com/Zig-HS/FakeImageDetection) |
+| [DeepEyes: Incentivizing "Thinking with Images" via Reinforcement Learning (arXiv 2025)](https://arxiv.org/abs/2505.14362) | Multimedia Generation and Detection | [DeepEyes](https://github.com/Visual-Agent/DeepEyes) |
+| [Seeing It or Not? Interpretable Vision-aware Latent Steering to Mitigate Object Hallucinations (arXiv 2025)](https://arxiv.org/abs/2505.17812) | Multimedia Generation and Detection | [VaLSe](https://github.com/Ziwei-Zheng/VaLSe) |
 
 ### 🌈 Contribution and Participation Guide
 
