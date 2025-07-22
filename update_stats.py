@@ -172,6 +172,7 @@ def update_readme_en():
         flags=re.DOTALL
     )
 
+    repos = get_repos()
     # 更新表格中的仓库链接
     for repo in repos:
         repo_name = repo["name"]
