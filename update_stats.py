@@ -202,7 +202,7 @@ def add_star_badges_to_readme(readme_path):
                     badge = badge_template.format(repo=repo_path.group(1))
                     # 如果未包含徽章再加
                     if badge not in line:
-                        return f"{url}<br>{badge}"
+                        return f"{url} {badge}"
                 return url
 
             line = re.sub(r'\[.*?\]\(https://github\.com/.*?\)', add_badge, line)
