@@ -21,14 +21,6 @@
       <td style="padding: 10px; font-weight: bold; text-align: center;">总复制数 🍴</td>
       <td style="padding: 10px; text-align: center;">32</td>
     </tr>
-    # <tr>
-    #   <td style="padding: 10px; font-weight: bold; text-align: center;">主要语言 🖨</td>
-    #   <td style="padding: 10px; text-align: center;">
-    #     <ul style="list-style: none; padding: 0; margin: 0;">
-    #       
-    #     </ul>
-    #   </td>
-    # </tr>
   </table>
 </div>
 <!-- STATS_CARD_END -->
