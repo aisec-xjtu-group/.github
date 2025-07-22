@@ -21,14 +21,14 @@ We are the Artificial Intelligence Security (AISEC) Research Group at Xi'an Jiao
       <td style="padding: 10px; font-weight: bold; text-align: center;">Total Forks 🍴</td>
       <td style="padding: 10px; text-align: center;">32</td>
     </tr>
-    <tr>
-      <td style="padding: 10px; font-weight: bold; text-align: center;">Primary Languages 🖨</td>
-      <td style="padding: 10px; text-align: center;">
-        <ul style="list-style: none; padding: 0; margin: 0;">
-          
-        </ul>
-      </td>
-    </tr>
+    # <tr>
+    #   <td style="padding: 10px; font-weight: bold; text-align: center;">Primary Languages 🖨</td>
+    #   <td style="padding: 10px; text-align: center;">
+    #     <ul style="list-style: none; padding: 0; margin: 0;">
+    #       
+    #     </ul>
+    #   </td>
+    # </tr>
   </table>
 </div>
 <!-- STATS_CARD_END -->
