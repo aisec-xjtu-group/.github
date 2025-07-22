@@ -2,7 +2,7 @@
 
 [![Static Badge](https://img.shields.io/badge/CN-中文-red)](https://github.com/aisec-xjtu-group/.github/blob/main/profile/README-zh.md)
 
-We are the Artificial Intelligence Security (AISEC) Research Group at Xi'an Jiaotong University (XJTU), focusing on various aspects of AI security, including Adversarial Machine Learning, Multimedia Generation and Detection, Large Model Security, AI Testing, Trustworthy AI, and Intelligent Identity Security.
+We are the Artificial Intelligence Security (AISEC) Research Group at Xi'an Jiaotong University (XJTU), focusing on various directions of AI security, including Adversarial Machine Learning, Multimedia Generation and Detection, Large Model Security, AI Testing, Trustworthy AI, and Intelligent Identity Security.
 
 ### 📊 Repository Statistics
 
