@@ -15,17 +15,17 @@
     </tr>
     <tr>
       <td style="padding: 10px; font-weight: bold; text-align: center;">总星标数 ⭐</td>
-      <td style="padding: 10px; text-align: center;">740</td>
+      <td style="padding: 10px; text-align: center;">741</td>
     </tr>
     <tr>
       <td style="padding: 10px; font-weight: bold; text-align: center;">总复制数 🍴</td>
-      <td style="padding: 10px; text-align: center;">36</td>
+      <td style="padding: 10px; text-align: center;">32</td>
     </tr>
     <tr>
       <td style="padding: 10px; font-weight: bold; text-align: center;">主要语言 🖨</td>
       <td style="padding: 10px; text-align: center;">
         <ul style="list-style: none; padding: 0; margin: 0;">
-          <li>Python: 1,311,334 bytes</li><li>Shell: 28,529 bytes</li><li>Makefile: 1,371 bytes</li>
+          
         </ul>
       </td>
     </tr>
