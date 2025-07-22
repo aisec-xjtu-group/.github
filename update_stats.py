@@ -172,19 +172,6 @@ def update_readme_en():
         flags=re.DOTALL
     )
 
-    repos = get_repos()
-    # 更新表格中的仓库链接
-    for repo in repos:
-        repo_name = repo["name"]
-        stars = repo["stargazers_count"]
-        repo_url = f"https://github.com/{ORG_NAME}/{repo_name}"
-        badge_url = f"https://img.shields.io/github/stars/{ORG_NAME}/{repo_name}"
-        
-        # 将仓库行替换为包含星标徽章的版本
-        pattern = re.compile(rf"(\[.*\]\({repo_url}\))\s*(\|.*\|)")
-        replacement = rf"\1 <img alt='Stars' src='{badge_url}'> \2"
-        content = re.sub(pattern, replacement, content)
-
     # 写回 README.md
     with open(README_PATH_en, "w", encoding="utf-8") as f:
         f.write(new_content)
