@@ -27,7 +27,7 @@
 
 ### 👩‍💻 当前开源资源
 
-| 论文 | 方向 | 仓库 |
+| 方向 | 论文 | 仓库 |
 | --- | --- | --- |
 | Adversarial Machine Learning | [Improving Integrated  Gradient-based Transferable Adversarial Examples by Refining the Integration Path](https://ojs.aaai.org/index.php/AAAI/article/view/32722) (AAAI 2025) | [MuMoDIG](https://github.com/RYC-98/MuMoDIG) <img alt="Stars" src="https://img.shields.io/github/stars/RYC-98/MuMoDIG"> |
 | Adversarial Machine Learning | [Improving Adversarial  Transferability on Vision Transformers via Forward Propagation Refinement](https://openaccess.thecvf.com/content/CVPR2025/html/Ren_Improving_Adversarial_Transferability_on_Vision_Transformers_via_Forward_Propagation_Refinement_CVPR_2025_paper.html) (CVPR 2025) | [FPR](https://github.com/RYC-98/FPR) <img alt="Stars" src="https://img.shields.io/github/stars/RYC-98/FPR"> |
