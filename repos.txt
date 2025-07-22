@@ -4,3 +4,4 @@ https://github.com/RYC-98/FPR
 https://github.com/cv12ha0/TITIM
 https://github.com/Zig-HS/FakeImageDetection
 https://github.com/Visual-Agent/DeepEyes
+https://github.com/Ziwei-Zheng/VaLSe
