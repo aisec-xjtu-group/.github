@@ -181,6 +181,37 @@ def update_readme_zh():
     with open(README_PATH_zh, "w", encoding="utf-8") as f:
         f.write(new_content)
 
+def add_star_badges_to_readme(readme_path):
+    """在 Markdown 表格中的 GitHub 仓库链接后添加星标徽章"""
+    badge_template = '<img alt="Stars" src="https://img.shields.io/github/stars/{repo}">'
+
+    try:
+        with open(readme_path, "r", encoding="utf-8") as f:
+            lines = f.readlines()
+    except FileNotFoundError:
+        print(f"Error: {readme_path} not found")
+        return
+
+    updated_lines = []
+    for line in lines:
+        if re.search(r'\| *\[.*?\]\(https://github\.com/.+?\)', line):
+            def add_badge(match):
+                url = match.group(0)
+                repo_path = re.search(r'github\.com/([^)\s]+)', url)
+                if repo_path:
+                    badge = badge_template.format(repo=repo_path.group(1))
+                    # 如果未包含徽章再加
+                    if badge not in line:
+                        return f"{url} {badge}"
+                return url
+
+            line = re.sub(r'\[.*?\]\(https://github\.com/.*?\)', add_badge, line)
+        updated_lines.append(line)
+
+    with open(readme_path, "w", encoding="utf-8") as f:
+        f.writelines(updated_lines)
+
 if __name__ == "__main__":
     update_readme_en()
     update_readme_zh()
+    add_star_badges_to_readme("profile/README.md")
