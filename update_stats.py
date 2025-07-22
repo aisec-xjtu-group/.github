@@ -98,14 +98,14 @@ def generate_stats_card_en():
       <td style="padding: 10px; font-weight: bold; text-align: center;">Total Forks 🍴</td>
       <td style="padding: 10px; text-align: center;">{total_forks}</td>
     </tr>
-    <tr>
-      <td style="padding: 10px; font-weight: bold; text-align: center;">Primary Languages 🖨</td>
-      <td style="padding: 10px; text-align: center;">
-        <ul style="list-style: none; padding: 0; margin: 0;">
-          {"".join(f"<li>{lang}: {bytes:,} bytes</li>" for lang, bytes in top_languages)}
-        </ul>
-      </td>
-    </tr>
+    # <tr>
+    #   <td style="padding: 10px; font-weight: bold; text-align: center;">Primary Languages 🖨</td>
+    #   <td style="padding: 10px; text-align: center;">
+    #     <ul style="list-style: none; padding: 0; margin: 0;">
+    #       {"".join(f"<li>{lang}: {bytes:,} bytes</li>" for lang, bytes in top_languages)}
+    #     </ul>
+    #   </td>
+    # </tr>
   </table>
 </div>
 <!-- STATS_CARD_END -->"""
@@ -142,14 +142,14 @@ def generate_stats_card_zh():
       <td style="padding: 10px; font-weight: bold; text-align: center;">总复制数 🍴</td>
       <td style="padding: 10px; text-align: center;">{total_forks}</td>
     </tr>
-    <tr>
-      <td style="padding: 10px; font-weight: bold; text-align: center;">主要语言 🖨</td>
-      <td style="padding: 10px; text-align: center;">
-        <ul style="list-style: none; padding: 0; margin: 0;">
-          {"".join(f"<li>{lang}: {bytes:,} bytes</li>" for lang, bytes in top_languages)}
-        </ul>
-      </td>
-    </tr>
+    # <tr>
+    #   <td style="padding: 10px; font-weight: bold; text-align: center;">主要语言 🖨</td>
+    #   <td style="padding: 10px; text-align: center;">
+    #     <ul style="list-style: none; padding: 0; margin: 0;">
+    #       {"".join(f"<li>{lang}: {bytes:,} bytes</li>" for lang, bytes in top_languages)}
+    #     </ul>
+    #   </td>
+    # </tr>
   </table>
 </div>
 <!-- STATS_CARD_END -->"""
