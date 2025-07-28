@@ -5,3 +5,12 @@ https://github.com/cv12ha0/TITIM
 https://github.com/Zig-HS/FakeImageDetection
 https://github.com/Visual-Agent/DeepEyes
 https://github.com/Ziwei-Zheng/VaLSe
+https://github.com/Gandolfczjh/3D2Fool
+https://github.com/Ziwei-Zheng/Nullu
+https://github.com/ZhengyuZhao/TransferAttackEval
+https://github.com/Gandolfczjh/APDE
+https://github.com/yyl-github-1896/QAA
+https://github.com/yyl-github-1896/CodeTAE
+https://github.com/yyl-github-1896/HAM
+https://github.com/lenijwp/COSTELLO
+https://github.com/lenijwp/ECLIPSE
