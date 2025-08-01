@@ -14,3 +14,15 @@ https://github.com/yyl-github-1896/CodeTAE
 https://github.com/yyl-github-1896/HAM
 https://github.com/lenijwp/COSTELLO
 https://github.com/lenijwp/ECLIPSE
+https://github.com/yfchen1994/poisoning_membership
+https://github.com/yfchen1994/Teacher-Fingerprinting
+https://github.com/yfchen1994/scaling_camouflage
+https://github.com/shiningrain/AUTOTRAINER
+https://github.com/shiningrain/DREAM
+https://github.com/shiningrain/STAFF
+https://github.com/shiningrain/CSUR_DL_library_survey
+https://github.com/shiningrain/JailGuard
+https://github.com/shiningrain/InvisibleHand
+https://github.com/Antimony5292/FairNeuron
+https://github.com/Antimony5292/CILIATE
+https://github.com/Antimony5292/Ballot
