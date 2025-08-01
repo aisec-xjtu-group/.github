@@ -11,15 +11,15 @@
   <table style="border-collapse: collapse; width: 80%; background: #f4f4f4; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); text-align: center;">
     <tr>
       <td style="padding: 10px; font-weight: bold; text-align: center;">总仓库数 📚</td>
-      <td style="padding: 10px; text-align: center;">16</td>
+      <td style="padding: 10px; text-align: center;">28</td>
     </tr>
     <tr>
       <td style="padding: 10px; font-weight: bold; text-align: center;">总星标数 ⭐</td>
-      <td style="padding: 10px; text-align: center;">1012</td>
+      <td style="padding: 10px; text-align: center;">1129</td>
     </tr>
     <tr>
       <td style="padding: 10px; font-weight: bold; text-align: center;">总复制数 🍴</td>
-      <td style="padding: 10px; text-align: center;">60</td>
+      <td style="padding: 10px; text-align: center;">71</td>
     </tr>
   </table>
 </div>
