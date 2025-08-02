@@ -25,7 +25,7 @@ We are the Artificial Intelligence Security (AISEC) Research Group at Xi'an Jiao
 </div>
 <!-- STATS_CARD_END -->
 
-### 👩‍💻 Repositories
+## 👩‍💻 Repositories
 
 | Direction | Paper | Repository |
 | --- | --- | --- |
@@ -57,11 +57,7 @@ We are the Artificial Intelligence Security (AISEC) Research Group at Xi'an Jiao
 | Large Model Security | [An Optimizable Suffix Is Worth A Thousand Templates: Efficient Black-box Jailbreaking without Affirmative Phrases via LLM as Optimizer](https://aclanthology.org/2025.findings-naacl.302) (NAACL Findings 2025) | [ECLIPSE](https://github.com/lenijwp/ECLIPSE) <img alt="Stars" src="https://img.shields.io/github/stars/lenijwp/ECLIPSE"> |
 | Large Model Security | [Deep Learning Library Testing: Definition, Methods and Challenges](https://dl.acm.org/doi/abs/10.1145/3716497) (CSUR 2025) | [CSUR_DL_library_survey](https://github.com/shiningrain/CSUR_DL_library_survey) <img alt="Stars" src="https://img.shields.io/github/stars/shiningrain/CSUR_DL_library_survey"> |
 
-### 🌈 Contribution and Participation Guide
-
-If members are willing to participate in open source, please contact the repository administrator 📬: yh.wang@stu.xjtu.edu.cn
-
-### 💬 Contact Us
+## 💬 Contact Us
 
 | Contact 👤 | Email 📧 |
 | :---: | :---: |
@@ -69,3 +65,4 @@ If members are willing to participate in open source, please contact the reposit
 | [Prof. Chenhao Lin](https://gr.xjtu.edu.cn/web/linchenhao) | linchenhao@xjtu.edu.cn |
 | [Prof. Zhengyu Zhao](https://zhengyuzhao.github.io/) | zhengyu.zhao@xjtu.edu.cn |
 | [Prof. Le Yang](https://www.yangle.cc/) | yangle15@xjtu.edu.cn |
+| Repository administrator: Yuheng Wang| yh.wang@stu.xjtu.edu.cn |
