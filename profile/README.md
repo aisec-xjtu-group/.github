@@ -15,11 +15,11 @@ We are the Artificial Intelligence Security (AISEC) Research Group at Xi'an Jiao
     </tr>
     <tr>
       <td style="padding: 10px; font-weight: bold; text-align: center;">Total Stars ⭐</td>
-      <td style="padding: 10px; text-align: center;">1162</td>
+      <td style="padding: 10px; text-align: center;">1168</td>
     </tr>
     <tr>
       <td style="padding: 10px; font-weight: bold; text-align: center;">Total Forks 🍴</td>
-      <td style="padding: 10px; text-align: center;">74</td>
+      <td style="padding: 10px; text-align: center;">75</td>
     </tr>
   </table>
 </div>
