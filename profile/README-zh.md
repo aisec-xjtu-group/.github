@@ -15,11 +15,11 @@
     </tr>
     <tr>
       <td style="padding: 10px; font-weight: bold; text-align: center;">总星标数 ⭐</td>
-      <td style="padding: 10px; text-align: center;">1176</td>
+      <td style="padding: 10px; text-align: center;">1181</td>
     </tr>
     <tr>
       <td style="padding: 10px; font-weight: bold; text-align: center;">总复制数 🍴</td>
-      <td style="padding: 10px; text-align: center;">76</td>
+      <td style="padding: 10px; text-align: center;">77</td>
     </tr>
   </table>
 </div>
