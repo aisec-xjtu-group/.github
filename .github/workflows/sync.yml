@@ -1,0 +1,14 @@
+name: Sync to Other Repos
+on:
+  schedule:
+    - cron: '0 12 * * *'  # 每天午夜运行
+  workflow_dispatch:  # 支持手动触发
+jobs:
+  update-stats:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Sync with other repos
+        run: |
+          git remote add other-repo https://github.com/aisec-xjtu-group/.github-private.git
+          git push other-repo main
