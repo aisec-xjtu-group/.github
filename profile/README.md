@@ -56,6 +56,7 @@ We are the Artificial Intelligence Security (AISEC) Research Group at Xi'an Jiao
 | AI Testing | [COSTELLO: Contrastive Testing for Embedding-based Large Language Model as a Service Embeddings](https://dl.acm.org/doi/10.1145/3643767) (FSE 2024) | [COSTELLO](https://github.com/lenijwp/COSTELLO) <img alt="Stars" src="https://img.shields.io/github/stars/lenijwp/COSTELLO"> |
 | Large Model Security | [An Optimizable Suffix Is Worth A Thousand Templates: Efficient Black-box Jailbreaking without Affirmative Phrases via LLM as Optimizer](https://aclanthology.org/2025.findings-naacl.302) (NAACL Findings 2025) | [ECLIPSE](https://github.com/lenijwp/ECLIPSE) <img alt="Stars" src="https://img.shields.io/github/stars/lenijwp/ECLIPSE"> |
 | Large Model Security | [Deep Learning Library Testing: Definition, Methods and Challenges](https://dl.acm.org/doi/abs/10.1145/3716497) (CSUR 2025) | [CSUR_DL_library_survey](https://github.com/shiningrain/CSUR_DL_library_survey) <img alt="Stars" src="https://img.shields.io/github/stars/shiningrain/CSUR_DL_library_survey"> |
+| Intelligent Identity Security | [Privacy on the Fly: A Predictive Adversarial Transformation Network for Mobile Sensor Data](https://arxiv.org/abs/2511.07242) (AAAI 2026) | [PATN](https://github.com/skysky4/PATN) <img alt="Stars" src="https://img.shields.io/github/stars/skysky4/PATN"> |
 
 ## 💬 Contact Us
 
