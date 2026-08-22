@@ -1,217 +1,213 @@
-import requests
 import os
 import re
-from collections import Counter
+import requests
 
 # 配置
-ORG_NAME = "aisec-xjtu-group"  # 替换为实际组织名称，例如 "xai-org"
-TOKEN = os.getenv("REFRESH_TOKEN")  # 从环境变量读取 PAT
-README_PATH_en = "profile/README.md"
-README_PATH_zh = "profile/README-zh.md"
-HEADERS = {
-    "Authorization": f"Bearer {TOKEN}",
-    "Accept": "application/vnd.github+json"
-}
+ORG_NAME = "aisec-xjtu-group"
+TOKEN = os.getenv("REFRESH_TOKEN")
 
-# def get_repos():
-#     """获取组织的所有仓库（包括私有仓库）"""
-#     repos = []
-#     page = 1
-#     while True:
-#         url = f"https://api.github.com/orgs/{ORG_NAME}/repos?type=all&page={page}&per_page=100"
-#         try:
-#             response = requests.get(url, headers=HEADERS)
-#             response.raise_for_status()
-#             data = response.json()
-#             if not data:
-#                 break
-#             repos.extend(data)
-#             page += 1
-#         except requests.exceptions.RequestException as e:
-#             print(f"Error fetching repos: {e}")
-#             exit(1)
-#     return repos
+README_PATH_EN = "profile/README.md"
+README_PATH_ZH = "profile/README-zh.md"
+REPOS_FILE = "repos.txt"
+
+HEADERS = {
+    "Accept": "application/vnd.github+json",
+    "X-GitHub-Api-Version": "2022-11-28",
+}
+if TOKEN:
+    HEADERS["Authorization"] = f"Bearer {TOKEN}"
+
 
 def get_repos():
-    """从文本文件读取仓库URL以获取所有仓库"""
+    """从 repos.txt 读取 GitHub 仓库 URL，并获取仓库信息。"""
     repos = []
+
     try:
-        with open("repos.txt", "r", encoding="utf-8") as f:
+        with open(REPOS_FILE, "r", encoding="utf-8") as f:
             repo_urls = [line.strip() for line in f if line.strip()]
-        
-        for url in repo_urls:
-            # 提取仓库名称和组织名称
-            repo_path = url.replace("https://github.com/", "").strip('/')
-            try:
-                repo_name = repo_path.split('/')[-1]
-                api_url = f"https://api.github.com/repos/{repo_path}"
-                response = requests.get(api_url, headers=HEADERS)
-                response.raise_for_status()
-                repos.append(response.json())
-            except requests.exceptions.RequestException as e:
-                print(f"Error fetching repo {repo_path}: {e}")
-                continue
     except FileNotFoundError:
-        print("Error: repos.txt not found")
-        exit(1)
+        raise SystemExit(f"Error: {REPOS_FILE} not found")
+
+    for url in repo_urls:
+        match = re.match(
+            r"^https://github\.com/([^/\s]+)/([^/\s#?]+?)/?$",
+            url,
+            flags=re.IGNORECASE,
+        )
+        if not match:
+            print(f"Skip invalid GitHub repository URL: {url}")
+            continue
+
+        owner, repo_name = match.groups()
+        repo_path = f"{owner}/{repo_name}"
+        api_url = f"https://api.github.com/repos/{repo_path}"
+
+        try:
+            response = requests.get(api_url, headers=HEADERS, timeout=30)
+            response.raise_for_status()
+            repos.append(response.json())
+        except requests.exceptions.RequestException as e:
+            print(f"Error fetching repo {repo_path}: {e}")
+
     return repos
 
-def get_languages(repo_name):
-    """获取单个仓库的语言统计"""
-    url = f"https://api.github.com/repos/{ORG_NAME}/{repo_name}/languages"
-    try:
-        response = requests.get(url, headers=HEADERS)
-        response.raise_for_status()
-        return response.json()
-    except requests.exceptions.RequestException as e:
-        print(f"Error fetching languages for {repo_name}: {e}")
-        return {}
 
-def generate_stats_card_en():
-    """生成统计卡片的 Markdown 内容"""
+def collect_stats():
+    """只请求一次 GitHub API，汇总 README 需要的统计信息。"""
     repos = get_repos()
-    total_repos = len(repos)
-    total_stars = sum(repo["stargazers_count"] for repo in repos)
-    total_forks = sum(repo["forks_count"] for repo in repos)
 
-    # 汇总语言
-    language_counter = Counter()
-    for repo in repos:
-        languages = get_languages(repo["name"])
-        for lang, bytes in languages.items():
-            language_counter[lang] += bytes
-    top_languages = language_counter.most_common(3)  # 获取前 3 种语言
+    return {
+        "total_repos": len(repos),
+        "total_stars": sum(repo.get("stargazers_count", 0) for repo in repos),
+        "total_forks": sum(repo.get("forks_count", 0) for repo in repos),
+    }
 
-    # 生成卡片样式的 Markdown
-    card = f"""<!-- STATS_CARD_START -->
-<div style="display: flex; justify-content: center;">
-  <table style="border-collapse: collapse; width: 80%; background: #f4f4f4; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); text-align: center;">
-    <tr>
-      <td style="padding: 10px; font-weight: bold; text-align: center;">Total Repositories 📚</td>
-      <td style="padding: 10px; text-align: center;">{total_repos}</td>
-    </tr>
-    <tr>
-      <td style="padding: 10px; font-weight: bold; text-align: center;">Total Stars ⭐</td>
-      <td style="padding: 10px; text-align: center;">{total_stars}</td>
-    </tr>
-    <tr>
-      <td style="padding: 10px; font-weight: bold; text-align: center;">Total Forks 🍴</td>
-      <td style="padding: 10px; text-align: center;">{total_forks}</td>
-    </tr>
-  </table>
-</div>
+
+def generate_stats_card_en(stats):
+    """生成 GitHub README 兼容的英文统计表。"""
+    return f"""<!-- STATS_CARD_START -->
+<table align="center">
+<tr>
+<th align="center">Metric</th>
+<th align="center">Count</th>
+</tr>
+<tr>
+<td align="center"><b>Total Repositories 📚</b></td>
+<td align="center">{stats["total_repos"]}</td>
+</tr>
+<tr>
+<td align="center"><b>Total Stars ⭐</b></td>
+<td align="center">{stats["total_stars"]}</td>
+</tr>
+<tr>
+<td align="center"><b>Total Forks 🍴</b></td>
+<td align="center">{stats["total_forks"]}</td>
+</tr>
+</table>
 <!-- STATS_CARD_END -->"""
-    return card
 
-def generate_stats_card_zh():
-    """生成统计卡片的 Markdown 内容"""
-    repos = get_repos()
-    total_repos = len(repos)
-    total_stars = sum(repo["stargazers_count"] for repo in repos)
-    total_forks = sum(repo["forks_count"] for repo in repos)
 
-    # 汇总语言
-    language_counter = Counter()
-    for repo in repos:
-        languages = get_languages(repo["name"])
-        for lang, bytes in languages.items():
-            language_counter[lang] += bytes
-    top_languages = language_counter.most_common(3)  # 获取前 3 种语言
-
-    # 生成卡片样式的 Markdown
-    card = f"""<!-- STATS_CARD_START -->
-<div style="display: flex; justify-content: center;">
-  <table style="border-collapse: collapse; width: 80%; background: #f4f4f4; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); text-align: center;">
-    <tr>
-      <td style="padding: 10px; font-weight: bold; text-align: center;">总仓库数 📚</td>
-      <td style="padding: 10px; text-align: center;">{total_repos}</td>
-    </tr>
-    <tr>
-      <td style="padding: 10px; font-weight: bold; text-align: center;">总星标数 ⭐</td>
-      <td style="padding: 10px; text-align: center;">{total_stars}</td>
-    </tr>
-    <tr>
-      <td style="padding: 10px; font-weight: bold; text-align: center;">总复制数 🍴</td>
-      <td style="padding: 10px; text-align: center;">{total_forks}</td>
-    </tr>
-  </table>
-</div>
+def generate_stats_card_zh(stats):
+    """生成 GitHub README 兼容的中文统计表。"""
+    return f"""<!-- STATS_CARD_START -->
+<table align="center">
+<tr>
+<th align="center">统计项</th>
+<th align="center">数量</th>
+</tr>
+<tr>
+<td align="center"><b>总仓库数 📚</b></td>
+<td align="center">{stats["total_repos"]}</td>
+</tr>
+<tr>
+<td align="center"><b>总星标数 ⭐</b></td>
+<td align="center">{stats["total_stars"]}</td>
+</tr>
+<tr>
+<td align="center"><b>总 Fork 数 🍴</b></td>
+<td align="center">{stats["total_forks"]}</td>
+</tr>
+</table>
 <!-- STATS_CARD_END -->"""
-    return card
 
-def update_readme_en():
-    """更新 README.md 的指定部分"""
-    try:
-        with open(README_PATH_en, "r", encoding="utf-8") as f:
-            content = f.read()
-    except FileNotFoundError:
-        print(f"Error: {README_PATH_en} not found")
-        exit(1)
 
-    # 使用正则表达式替换 STATS_CARD_START 和 STATS_CARD_END 之间的内容
-    new_content = re.sub(
-        r"<!-- STATS_CARD_START -->.*?<!-- STATS_CARD_END -->",
-        generate_stats_card_en(),
-        content,
-        flags=re.DOTALL
-    )
-
-    # 写回 README.md
-    with open(README_PATH_en, "w", encoding="utf-8") as f:
-        f.write(new_content)
-
-def update_readme_zh():
-    """更新 README.md 的指定部分"""
-    try:
-        with open(README_PATH_zh, "r", encoding="utf-8") as f:
-            content = f.read()
-    except FileNotFoundError:
-        print(f"Error: {README_PATH_zh} not found")
-        exit(1)
-
-    # 使用正则表达式替换 STATS_CARD_START 和 STATS_CARD_END 之间的内容
-    new_content = re.sub(
-        r"<!-- STATS_CARD_START -->.*?<!-- STATS_CARD_END -->",
-        generate_stats_card_zh(),
-        content,
-        flags=re.DOTALL
-    )
-
-    # 写回 README.md
-    with open(README_PATH_zh, "w", encoding="utf-8") as f:
-        f.write(new_content)
-
-def add_star_badges_to_readme(readme_path):
-    """在 Markdown 表格中的 GitHub 仓库链接后添加星标徽章"""
-    badge_template = '<img alt="Stars" src="https://img.shields.io/github/stars/{repo}">'
-
+def update_readme(readme_path, card):
+    """替换 README 中 STATS_CARD_START / STATS_CARD_END 之间的内容。"""
     try:
         with open(readme_path, "r", encoding="utf-8") as f:
-            lines = f.readlines()
+            content = f.read()
+    except FileNotFoundError:
+        raise SystemExit(f"Error: {readme_path} not found")
+
+    pattern = re.compile(
+        r"<!-- STATS_CARD_START -->.*?<!-- STATS_CARD_END -->",
+        flags=re.DOTALL,
+    )
+
+    if not pattern.search(content):
+        raise SystemExit(
+            f"Error: stats markers not found in {readme_path}. "
+            "Please add <!-- STATS_CARD_START --> and <!-- STATS_CARD_END --> first."
+        )
+
+    new_content = pattern.sub(card, content, count=1)
+
+    with open(readme_path, "w", encoding="utf-8") as f:
+        f.write(new_content)
+
+
+def add_star_badges_to_html_readme(readme_path):
+    """
+    给 HTML 表格中的 GitHub 仓库链接自动添加 Stars badge。
+
+    仅处理 <td>...</td> 单元格：
+    - 如果单元格已经包含 GitHub stars badge，则保持不变；
+    - 如果单元格中存在 https://github.com/<owner>/<repo> 链接，
+      则在该链接后添加 badge。
+
+    这样不会再依赖旧的 Markdown 表格语法。
+    """
+    try:
+        with open(readme_path, "r", encoding="utf-8") as f:
+            content = f.read()
     except FileNotFoundError:
         print(f"Error: {readme_path} not found")
         return
 
-    updated_lines = []
-    for line in lines:
-        if re.search(r'\| *\[.*?\]\(https://github\.com/.+?\)', line):
-            def add_badge(match):
-                url = match.group(0)
-                repo_path = re.search(r'github\.com/([^)\s]+)', url)
-                if repo_path:
-                    badge = badge_template.format(repo=repo_path.group(1))
-                    # 如果未包含徽章再加
-                    if badge not in line:
-                        return f"{url} {badge}"
-                return url
+    td_pattern = re.compile(r"<td\b[^>]*>.*?</td>", flags=re.IGNORECASE | re.DOTALL)
 
-            line = re.sub(r'\[.*?\]\(https://github\.com/.*?\)', add_badge, line)
-        updated_lines.append(line)
+    anchor_pattern = re.compile(
+        r'(<a\b[^>]*href=["\']https://github\.com/'
+        r'([^/"\'\s<>]+/[^/"\'\s<>?#]+)'
+        r'/?["\'][^>]*>.*?</a>)',
+        flags=re.IGNORECASE | re.DOTALL,
+    )
+
+    def update_td(match):
+        cell = match.group(0)
+
+        # 已经有 stars badge 时不重复添加
+        if "img.shields.io/github/stars/" in cell:
+            return cell
+
+        anchor_match = anchor_pattern.search(cell)
+        if not anchor_match:
+            return cell
+
+        repo_path = anchor_match.group(2).rstrip("/")
+        anchor_html = anchor_match.group(1)
+        badge = (
+            f'<img alt="Stars" '
+            f'src="https://img.shields.io/github/stars/{repo_path}">'
+        )
+
+        replacement = f"{anchor_html}<br>{badge}"
+        return cell[:anchor_match.start()] + replacement + cell[anchor_match.end():]
+
+    new_content = td_pattern.sub(update_td, content)
 
     with open(readme_path, "w", encoding="utf-8") as f:
-        f.writelines(updated_lines)
+        f.write(new_content)
+
+
+def main():
+    # 统计数据只获取一次，避免英文/中文 README 重复请求 GitHub API
+    stats = collect_stats()
+
+    update_readme(README_PATH_EN, generate_stats_card_en(stats))
+    update_readme(README_PATH_ZH, generate_stats_card_zh(stats))
+
+    # HTML 表格版本：英文和中文 README 都检查并补 Stars badge
+    add_star_badges_to_html_readme(README_PATH_EN)
+    add_star_badges_to_html_readme(README_PATH_ZH)
+
+    print(
+        "README stats updated successfully: "
+        f"{stats['total_repos']} repos, "
+        f"{stats['total_stars']} stars, "
+        f"{stats['total_forks']} forks."
+    )
+
 
 if __name__ == "__main__":
-    update_readme_en()
-    update_readme_zh()
-    add_star_badges_to_readme("profile/README.md")
+    main()
