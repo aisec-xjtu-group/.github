@@ -7,22 +7,18 @@
 ### 📊 组织仓库统计
 
 <!-- STATS_CARD_START -->
-<table align="center">
-<tr>
-<th align="center">统计项</th>
-<th align="center">数量</th>
-</tr>
+<table>
 <tr>
 <td align="center"><b>总仓库数 📚</b></td>
-<td align="center">29</td>
+<td align="center">34</td>
 </tr>
 <tr>
 <td align="center"><b>总星标数 ⭐</b></td>
-<td align="center">1845</td>
+<td align="center">1917</td>
 </tr>
 <tr>
 <td align="center"><b>总 Fork 数 🍴</b></td>
-<td align="center">131</td>
+<td align="center">145</td>
 </tr>
 </table>
 <!-- STATS_CARD_END -->

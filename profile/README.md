@@ -7,22 +7,18 @@ We are the Artificial Intelligence Security (AISEC) Research Group at Xi'an Jiao
 ## 📊 Repository Statistics
 
 <!-- STATS_CARD_START -->
-<table align="center">
-<tr>
-<th align="center">Metric</th>
-<th align="center">Count</th>
-</tr>
+<table>
 <tr>
 <td align="center"><b>Total Repositories 📚</b></td>
-<td align="center">29</td>
+<td align="center">34</td>
 </tr>
 <tr>
 <td align="center"><b>Total Stars ⭐</b></td>
-<td align="center">1845</td>
+<td align="center">1917</td>
 </tr>
 <tr>
 <td align="center"><b>Total Forks 🍴</b></td>
-<td align="center">131</td>
+<td align="center">145</td>
 </tr>
 </table>
 <!-- STATS_CARD_END -->
