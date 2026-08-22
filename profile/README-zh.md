@@ -7,22 +7,24 @@
 ### 📊 组织仓库统计
 
 <!-- STATS_CARD_START -->
-<div style="display: flex; justify-content: center;">
-  <table style="border-collapse: collapse; width: 80%; background: #f4f4f4; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); text-align: center;">
-    <tr>
-      <td style="padding: 10px; font-weight: bold; text-align: center;">总仓库数 📚</td>
-      <td style="padding: 10px; text-align: center;">29</td>
-    </tr>
-    <tr>
-      <td style="padding: 10px; font-weight: bold; text-align: center;">总星标数 ⭐</td>
-      <td style="padding: 10px; text-align: center;">1845</td>
-    </tr>
-    <tr>
-      <td style="padding: 10px; font-weight: bold; text-align: center;">总复制数 🍴</td>
-      <td style="padding: 10px; text-align: center;">131</td>
-    </tr>
-  </table>
-</div>
+<table align="center">
+<tr>
+<th align="center">统计项</th>
+<th align="center">数量</th>
+</tr>
+<tr>
+<td align="center"><b>总仓库数 📚</b></td>
+<td align="center">29</td>
+</tr>
+<tr>
+<td align="center"><b>总星标数 ⭐</b></td>
+<td align="center">1845</td>
+</tr>
+<tr>
+<td align="center"><b>总 Fork 数 🍴</b></td>
+<td align="center">131</td>
+</tr>
+</table>
 <!-- STATS_CARD_END -->
 
 ### 👩‍💻 当前开源资源
