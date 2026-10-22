@@ -14,7 +14,7 @@
 </tr>
 <tr>
 <td align="center"><b>总星标数 ⭐</b></td>
-<td align="center">1938</td>
+<td align="center">1939</td>
 </tr>
 <tr>
 <td align="center"><b>总 Fork 数 🍴</b></td>
